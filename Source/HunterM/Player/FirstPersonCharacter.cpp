@@ -44,7 +44,7 @@ AFirstPersonCharacter::AFirstPersonCharacter()
 	// Default offset from the character location for projectiles to spawn
 	GunOffset = FVector(100.0f, 0.0f, 10.0f);
 
-
+	
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -53,10 +53,13 @@ void AFirstPersonCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	//Set up gun
 	if (GunBlueprint == NULL)return;
 	Gun = GetWorld()->SpawnActor<AGun>(GunBlueprint);
-	Gun->AttachToComponent(Mesh1P,FAttachmentTransformRules(EAttachmentRule::SnapToTarget,true),TEXT("GripPoint"));
+	Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 	Gun->AnimInstance = Mesh1P->GetAnimInstance();
+
 	InputComponent->BindAction("Fire", IE_Pressed, Gun, &AGun::OnFire);
 	// Show or hide the two versions of the gun based on whether or not we're using motion controllers.
 	if (bUsingMotionControllers)
