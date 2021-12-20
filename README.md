@@ -1,10 +1,10 @@
 # HunterM
 
-MY FPS GDD - HUNTM
-Project Description :
-  This game design document describes the details for a multi-platform FPS game with cool mechanics and characters.
-  It plays like Doom but introduces the action element.
-  The game's name is HunterM.
+MY FPS GDD - HUNTM  
+Project Description :  
+  This game design document describes the details for a multi-platform FPS game with cool mechanics and characters.  
+  It plays like Doom but introduces the action element.  
+  The game's name is HunterM.  
 
 1. Characters :
    HunterM is the main character. HunterM is an exile who wandering between the planets. He has to be a killing machine when landing on the planets to get the energy
