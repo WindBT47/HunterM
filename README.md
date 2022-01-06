@@ -16,6 +16,9 @@ Here are some introductions about the features in this project.
 ### WallRun
 ![avatar](https://github.com/WindBT47/MarkdownPhotos/blob/master/Pic_HunterM/wallRun1_s.gif)
 
+![avatar](https://github.com/WindBT47/MarkdownPhotos/blob/master/Pic_HunterM/wallRun2_s.gif)
+
+![avatar](https://github.com/WindBT47/MarkdownPhotos/blob/master/Pic_HunterM/wallRun3_s.gif)
 ### GoCartMovementComponent.cpp&h
 
 This component is inherited from UActorComponent, and it controls the movement of the vehicle. It has a USTRUCT named FGoCartMove to generalize the state of the vehicle. This class is base on classical physics. The force of the vehicle is the sum of the air resistance, rolling resistance, and the push force from the controller. And then calculate the rotation and the offset by mathematics with the velocity.
